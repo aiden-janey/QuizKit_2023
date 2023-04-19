@@ -13,6 +13,10 @@ class AppViewController: UIViewController {
     @IBOutlet var Background2 : UIImageView!
     @IBOutlet var Background3 : UIImageView!
     
+    @IBOutlet var Profile : UIImageView!
+
+    @IBOutlet weak var mainBackView: UIView!
+    
     @IBOutlet var ICON1 : UIImageView!
     @IBOutlet var ICON2 : UIImageView!
     @IBOutlet var ICON3 : UIImageView!
@@ -31,6 +35,9 @@ class AppViewController: UIViewController {
         Background3.layer.cornerRadius = 26
         Background3.layer.masksToBounds = true
         
+        Profile.layer.cornerRadius = 90
+        Profile.layer.masksToBounds = true
+        
         ICON1.layer.cornerRadius = 45
         ICON1.layer.masksToBounds = true
         
@@ -39,6 +46,9 @@ class AppViewController: UIViewController {
         
         ICON3.layer.cornerRadius = 45
         ICON3.layer.masksToBounds = true
+        
+        self.mainBackView.layer.cornerRadius = 40
+        self.mainBackView.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
     
